@@ -16,3 +16,5 @@ usercache.json
 !.vscode/settings.json
 !.gitignore
 example.*
+yarn.lock
+*/probe/*

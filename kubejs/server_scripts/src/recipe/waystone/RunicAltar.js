@@ -1,5 +1,5 @@
 ServerEvents.recipes(event => {
-    const { runic_altar, terra_plate } = event.recipes.botania;
+    const { runic_altar } = event.recipes.botania;
 
     const materialList = {
         "waystones:waystone": "minecraft:stone_bricks",
@@ -7,7 +7,7 @@ ServerEvents.recipes(event => {
         "waystones:sandy_waystone": "minecraft:sandstone",
     };
 
-    for(const key in materialList) {
+    for (const key in materialList) {
         runic_altar(
             `2x ${key}`,
             [

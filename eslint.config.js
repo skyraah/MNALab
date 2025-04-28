@@ -35,7 +35,7 @@ module.exports = [
             // if / else / for / while / function 等关键字后必须有一个空格
             "keyword-spacing": ["error", {
                 "before": true,
-                "after": false,
+                "after": true,
                 "overrides": {
                     "const": { "after": true }
                 }
@@ -166,11 +166,12 @@ module.exports = [
 
             // 禁止出现未使用的变量
             "no-unused-vars": ["warn", {
-                "vars": "all", // 检查所有变量
+                "vars": "local",
+                "varsIgnorePattern": "^$.*", // 检查所有变量
                 "args": "none" // 不检查函数参数
             }],
 
-            "prefer-const": ["error"]//推荐使用const，不允许未修改的变量使用let
+            // "prefer-const": ["error"]//推荐使用const，不允许未修改的变量使用let
         },
         // JSDoc 插件设置
         settings: {
