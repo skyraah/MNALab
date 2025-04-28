@@ -15,3 +15,4 @@ usercache.json
 !config/*
 !.vscode/settings.json
 !.gitignore
+example.*
