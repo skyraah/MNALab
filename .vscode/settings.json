@@ -1,0 +1,18 @@
+{
+    "json.schemas": [
+        {
+            "fileMatch": [
+                "/lang/*.json"
+            ],
+            "url": "./.vscode/probe.lang-schema.json"
+        },
+        {
+            "fileMatch": [
+                "/probe/docs/*.json"
+            ],
+            "url": "./.vscode/probe.doc-schema.json"
+        }
+    ],
+    "eslint.enable": true,
+    "eslint.useESLintClass": true, // 强制使用项目配置（即使无 package.json）
+}
