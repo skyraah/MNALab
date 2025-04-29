@@ -7,7 +7,6 @@ ServerEvents.recipes(event => {
         "waystones:mossy_waystone",
         "waystones:sandy_waystone",
         "waystones:sharestone",
-        "waystones:warp_plate",
     ];
 
     removeList.forEach(recipe => {
